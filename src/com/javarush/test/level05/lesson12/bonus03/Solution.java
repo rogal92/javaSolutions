@@ -1,6 +1,10 @@
 package com.javarush.test.level05.lesson12.bonus03;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /* Learning and practicing algorithm
 Task: Write a program that
@@ -14,13 +18,17 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = ;
+        int maximum = Integer.parseInt(reader.readLine());
+        int number;
+        List<Integer> list = new ArrayList<Integer>();
 
-        //add your code here
-
-
-
-
+        for (int i = 1; i <= maximum ; i++)
+        {
+            number = Integer.parseInt(reader.readLine());
+            list.add(number);
+        }
+        Collections.sort(list);
+        maximum = list.get(list.size() -1);
         System.out.println(maximum);
     }
 }
