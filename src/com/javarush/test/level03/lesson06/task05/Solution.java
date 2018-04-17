@@ -8,6 +8,6 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        //add your code here
+        System.out.println("日本語");
     }
 }
