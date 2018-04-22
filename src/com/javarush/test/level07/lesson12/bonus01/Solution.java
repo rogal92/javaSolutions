@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /* Program doesn’t compile and run. Fix it.
 Task: Read from the keyboard the cat data and display it to the screen.
@@ -18,14 +19,13 @@ public class Solution
 
     public static void main(String[] args) throws IOException
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        Scanner scanner = new Scanner(System.in);
         while (true)
         {
-            String name = reader.readLine();
-            int age = Integer.parseInt(reader.readLine());
-            int weight = Integer.parseInt(reader.readLine());
-            int tailLength = Integer.parseInt(reader.readLine());
+            String name = scanner.nextLine();
+            int age = scanner.nextInt();
+            int weight = scanner.nextInt();
+            int tailLength = scanner.nextInt();
 
             if (name.isEmpty()) {
                 break;
