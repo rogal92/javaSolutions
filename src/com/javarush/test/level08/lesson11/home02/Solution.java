@@ -23,6 +23,8 @@ public class Solution
         Set<Object> pets = join(cats, dogs);
         printPets(pets);
 
+        System.out.println();
+
         removeCats(pets, cats);
         printPets(pets);
     }
@@ -65,8 +67,7 @@ public class Solution
 
     public static void printPets(Set<Object> pets)
     {
-        for (Object pet: pets)
-            System.out.println(pet);
+       pets.forEach(System.out::println);
     }
 
     public static class Cat {
