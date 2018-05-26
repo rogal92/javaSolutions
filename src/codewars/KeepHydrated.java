@@ -23,7 +23,7 @@ public class KeepHydrated {
         int result = Liters(time);
         System.out.println(result);
     }
-    public static int Liters(double time) {
+    public static int liters(double time) {
         return (int)(time * 0.5);
     }
 }
