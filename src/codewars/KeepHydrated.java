@@ -20,7 +20,7 @@ package codewars;
 public class KeepHydrated {
     public static void main(String[] args) {
         double time = 11.8;
-        int result = Liters(time);
+        int result = liters(time);
         System.out.println(result);
     }
     public static int liters(double time) {
