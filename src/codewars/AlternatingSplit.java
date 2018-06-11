@@ -20,14 +20,6 @@ public class AlternatingSplit {
         return temp;
     }
 
-    public static String decrypt(final String encryptedText, final int n) {
-
-        String temp = encryptedText;
-        for (int i = 0; i < n; i++) {
-            temp = iterate(temp);
-        }
-        return temp;
-    }
     public static String iterate(String text) {
         String evenCh = "";
         String oddCh = "";
